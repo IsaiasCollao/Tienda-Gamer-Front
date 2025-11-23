@@ -1,7 +1,8 @@
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <a className="navbar-brand" href="/home">Top navbar</a>
+    // CAMBIO 1: Eliminado 'mb-4'. Ahora solo es bg-dark.
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+      <a className="navbar-brand" href="/">Tienda Gamer</a>
 
       <button 
         className="navbar-toggler" 
@@ -18,7 +19,7 @@ export default function Navbar() {
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <ul className="navbar-nav me-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="/home">Home</a>
+            <a className="nav-link" href="/">Home</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/catalogo">Catalogo</a>
@@ -26,10 +27,10 @@ export default function Navbar() {
         </ul>
 
         <div className="d-flex">
-        <a href="/login" className="btn btn-outline-light me-2">Iniciar Sesión</a>
-        <a href="/register" className="btn btn-success">Registrarse</a>
+          <a href="/carrito" className="btn btn-outline-light me-2 btn-sm">Carrito</a>
+          <a href="/inicio" className="btn btn-outline-light me-2 btn-sm">Iniciar Sesión</a>
+          <a href="/registro" className="btn btn-success btn-sm">Registrarse</a>
         </div>
-
       </div>
     </nav>
   );

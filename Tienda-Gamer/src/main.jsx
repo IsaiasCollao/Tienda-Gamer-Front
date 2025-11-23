@@ -3,13 +3,14 @@ import { createRoot } from 'react-dom/client'
 import AppRoutes from './route.jsx'
 import {BrowserRouter} from 'react-router-dom'
 import Navbar from './components/navbar.jsx'
+import Footer from './components/footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-          <Navbar/>
+        <Navbar/>
       <BrowserRouter>
-  
         <AppRoutes/>
       </BrowserRouter>
+      <Footer/>
   </StrictMode>,
 )
